@@ -84,17 +84,12 @@ class App extends React.Component {
                     {/* everything inside here is passed to scroll as props.children */}
                     <ErrorBoundary>
                         {comp}
-                        {this.throwError()}
                     </ErrorBoundary>
                 </Scroll>
             </div>
         );
     }
 
-    throwError(){
-        // throw new Error('NOOOO');
-        return ;
-    }
 }
 
 export default App;
